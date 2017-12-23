@@ -3,7 +3,7 @@ module.exports= function(app){
 	var bodyParser= require("body-parser");
 	var urlencodedParser= bodyParser.urlencoded({extended: false});
 	var mongoose= require("mongoose");
-	// connecting
+	// connecting to db
 	
 	mongoose.connect('mongodb://satya:satya@ds259305.mlab.com:59305/to-do-list-db',{ useMongoClient: true}, function(err,db){
 		if(err)
